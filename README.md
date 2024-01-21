@@ -55,3 +55,5 @@ Build the project run it. Explore the API endpoints documented in Swagger to und
 [🚀🔨 Enhance Test Coverage](https://github.com/Festiis/NurediniCargoAPI/issues/4)
 
 [🔨 Implement BaseController for common CRUD Operations](https://github.com/Festiis/NurediniCargoAPI/issues/2)
+
+[🔨 Implement Data Validation Middleware](https://github.com/Festiis/NurediniCargoAPI/issues/5)
