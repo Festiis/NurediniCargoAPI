@@ -1,8 +1,13 @@
 # Nuredini Cargo API
 
-## Introduction
+Nuredini Cargo API is a .NET Core Web API application. It allows users to manage goods, suppliers, warehouses, and inventory.
 
-It allows users to manage goods, suppliers, warehouses, and inventory efficiently.
+## Table of Contents
+
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
 
 ## Features
 
