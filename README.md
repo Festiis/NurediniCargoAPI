@@ -8,6 +8,7 @@ Nuredini Cargo API is a .NET Core Web API application. It allows users to manage
 - [Technologies Used](#technologies-used)
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
+- [Issues, Features, and Should-Haves](#issues-features-and-should-haves)
 
 ## Features
 
@@ -44,3 +45,10 @@ This project assumes you have SQL Sever installed on your machine:
 ## Getting Started
 
 Build the project run it. Explore the API endpoints documented in Swagger to understand how to interact with the Nuredini Cargo API effectively.
+
+## Issues, Features, and Should-Haves
+
+[🚀 Implement Address Validation](https://github.com/Festiis/NurediniCargoAPI/issues/3)
+[🐛🚀 Inventory Updates with Movement CRUD Operations](https://github.com/Festiis/NurediniCargoAPI/issues/1)
+[🚀🔨 Enhance Test Coverage](https://github.com/Festiis/NurediniCargoAPI/issues/4)
+[🔨 Implement BaseController for common CRUD Operations](https://github.com/Festiis/NurediniCargoAPI/issues/2)
