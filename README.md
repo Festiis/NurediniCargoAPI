@@ -49,6 +49,9 @@ Build the project run it. Explore the API endpoints documented in Swagger to und
 ## Issues, Features, and Should-Haves
 
 [🚀 Implement Address Validation](https://github.com/Festiis/NurediniCargoAPI/issues/3)
+
 [🐛🚀 Inventory Updates with Movement CRUD Operations](https://github.com/Festiis/NurediniCargoAPI/issues/1)
+
 [🚀🔨 Enhance Test Coverage](https://github.com/Festiis/NurediniCargoAPI/issues/4)
+
 [🔨 Implement BaseController for common CRUD Operations](https://github.com/Festiis/NurediniCargoAPI/issues/2)
