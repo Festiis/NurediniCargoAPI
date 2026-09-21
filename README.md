@@ -1,59 +1,41 @@
 # Nuredini Cargo API
 
-Nuredini Cargo API is a .NET Core Web API application. It allows users to manage goods, suppliers, warehouses, and inventory.
+A small .NET 8 Web API for managing goods, suppliers, warehouses, inventory and stock movements.
 
-## Table of Contents
+Built mostly to explore how I wanted to structure a more enterprise-style .NET backend.
 
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Prerequisites](#prerequisites)
-- [Getting Started](#getting-started)
-- [Issues, Features, and Should-Haves](#issues-features-and-should-haves)
+## Stack
 
-## Features
+- .NET 8 / C#
+- Entity Framework Core
+- SQL Server
+- FluentValidation
+- Swagger / OpenAPI
+- Repository pattern with async repositories
+- Dependency injection
+- Unit and integration tests
 
-- **Goods Management:** Create, update, and delete goods, along with their associated information such as price, quantity, and suppliers.
+## Structure
 
-- **Supplier Management:** Track suppliers and their details, including contact information and location.
+The API is split into controllers, DTOs, entities, validators, repositories and EF Core configuration/migrations.
 
-- **Warehouse Management:** Manage warehouses, including their name, address, city, postal code, and country.
+Nothing revolutionary here. Just a fairly clean backend with enough moving parts to make the interesting problems show up.
 
-- **Inventory Tracking:** Keep track of inventory levels in different warehouses, supporting efficient logistics operations.
+## Run
 
-- **Swagger Documentation:** Utilize Swagger/OpenAPI for clear and interactive API documentation.
+You need a SQL Server instance and a valid connection string in `appsettings.json`.
 
-- **Entity Framework Core:** Leverage Entity Framework Core for database operations, ensuring a robust and efficient data access layer.
+Then:
 
-## Technologies Used
+```bash
+dotnet restore
+dotnet run --project NurediniCargoAPI
+```
 
-- [.NET Core](https://dotnet.microsoft.com/): Cross-platform, high-performance framework for building modern, cloud-based, and internet-connected applications.
+Swagger is available in development mode.
 
-- [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/): Lightweight, extensible, and cross-platform Object-Relational Mapping (ORM) framework.
+## Tests
 
-- [Fluent Validation](https://fluentvalidation.net/): A popular .NET library for building strongly-typed validation rules.
-
-- [Swagger/OpenAPI](https://swagger.io/): API documentation and visualization tool that enhances the development workflow.
-
-- [xUnit/NUnit](https://xunit.net/): Testing frameworks for unit and integration testing.
-
-## Prerequisites
-
-This project assumes you have SQL Sever installed on your machine:
-
-- [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
-
-## Getting Started
-
-Build the project run it. Explore the API endpoints documented in Swagger to understand how to interact with the Nuredini Cargo API effectively.
-
-## Issues, Features, and Should-Haves
-
-[🚀 Implement Address Validation](https://github.com/Festiis/NurediniCargoAPI/issues/3)
-
-[🐛🚀 Inventory Updates with Movement CRUD Operations](https://github.com/Festiis/NurediniCargoAPI/issues/1)
-
-[🚀🔨 Enhance Test Coverage](https://github.com/Festiis/NurediniCargoAPI/issues/4)
-
-[🔨 Implement BaseController for common CRUD Operations](https://github.com/Festiis/NurediniCargoAPI/issues/2)
-
-[🔨 Implement Data Validation Middleware](https://github.com/Festiis/NurediniCargoAPI/issues/5)
+```bash
+dotnet test
+```
